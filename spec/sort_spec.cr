@@ -17,5 +17,7 @@ describe Sort do
     Sort.sort([2, 1, 3, 4]).should eq([1, 2, 3, 4])
     Sort.sort([3, 1, 2, 4]).should eq([1, 2, 3, 4])
     Sort.sort([3, 4, 2, 1]).should eq([1, 2, 3, 4])
+
+    Sort.sort([3, 5, 4, 2, 1]).should eq([1, 2, 3, 4, 5])
   end
 end
