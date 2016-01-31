@@ -7,6 +7,6 @@ end
 
 describe ImmutableSort do
   it "sorts" do
-    K.sort([])
+    K.sort([] of Int32)
   end
 end
