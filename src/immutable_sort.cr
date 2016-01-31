@@ -9,6 +9,11 @@ module ImmutableSort
       right = a[2..-1]
     end
 
+    if a.size > 2 && a[0] > a[2]
+      left << a[2]
+      right = a[3..-1]
+    end
+
     left + [a[0]] + sort(right)
   end
 end
