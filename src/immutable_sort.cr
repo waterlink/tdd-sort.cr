@@ -6,6 +6,6 @@ module ImmutableSort
       return [a[1], a[0]] + a[2..-1]
     end
 
-    a
+    [a[0]] + sort(a[1..-1])
   end
 end
