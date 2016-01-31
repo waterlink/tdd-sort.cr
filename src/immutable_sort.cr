@@ -9,6 +9,6 @@ module ImmutableSort
       right = a[2..-1]
     end
 
-    left + [a[0]] + right
+    left + [a[0]] + sort(right)
   end
 end
