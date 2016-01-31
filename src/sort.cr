@@ -1,4 +1,4 @@
 module Sort
-  def sort(a)
+  def self.sort(a)
   end
 end
