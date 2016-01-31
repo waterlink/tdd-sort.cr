@@ -12,5 +12,6 @@ describe ImmutableSort do
 
     K.sort([1, 2, 3]).should eq([1, 2, 3])
     K.sort([2, 1, 3]).should eq([1, 2, 3])
+    K.sort([1, 3, 2]).should eq([1, 2, 3])
   end
 end
