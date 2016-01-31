@@ -12,10 +12,12 @@ module ImmutableSort
       right << a[1]
     end
 
-    if a.size > 2 && a[0] > a[2]
-      left << a[2]
-    else
-      right << a[2]
+    if a.size > 2
+      if a[0] > a[2]
+        left << a[2]
+      else
+        right << a[2]
+      end
     end
 
     sort(left) + [a[0]] + sort(right)
