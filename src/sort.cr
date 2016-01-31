@@ -10,6 +10,14 @@ module Sort
       i += 1
     end
 
+    i = 0
+    while a.size > i + 1
+      if a[i] > a[i + 1]
+        a[i], a[i + 1] = {a[i + 1], a[i]}
+      end
+      i += 1
+    end
+
     a
   end
 end
