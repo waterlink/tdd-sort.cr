@@ -4,6 +4,7 @@ module ImmutableSort
 
     left = [] of Int32
     right = [] of Int32
+
     if a[0] > a[1]
       left << a[1]
     else
