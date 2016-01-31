@@ -7,6 +7,8 @@ module ImmutableSort
 
     i = 1
     while a.size > i
+      break if i > 2
+
       if a[0] > a[i]
         left << a[i]
       else
