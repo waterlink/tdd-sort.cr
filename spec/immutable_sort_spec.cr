@@ -9,5 +9,7 @@ describe ImmutableSort do
     K.sort([1]).should eq([1])
     K.sort([1, 2]).should eq([1, 2])
     K.sort([2, 1]).should eq([1, 2])
+
+    K.sort([1, 2, 3]).should eq([1, 2, 3])
   end
 end
