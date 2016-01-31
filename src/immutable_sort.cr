@@ -3,7 +3,7 @@ module ImmutableSort
     return a if a.size < 2
 
     left = [] of Int32
-    right = a[1..-1]
+    right = [] of Int32
     if a[0] > a[1]
       left << a[1]
     else
