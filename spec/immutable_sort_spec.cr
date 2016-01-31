@@ -8,5 +8,6 @@ describe ImmutableSort do
     K.sort([] of Int32).should eq([] of Int32)
     K.sort([1]).should eq([1])
     K.sort([1, 2]).should eq([1, 2])
+    K.sort([2, 1]).should eq([1, 2])
   end
 end
