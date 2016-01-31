@@ -14,6 +14,6 @@ module ImmutableSort
       right = a[3..-1]
     end
 
-    left + [a[0]] + sort(right)
+    sort(left) + [a[0]] + sort(right)
   end
 end
