@@ -5,6 +5,6 @@ K = ImmutableSort
 
 describe ImmutableSort do
   it "sorts" do
-    K.sort([] of Int32)
+    K.sort([] of Int32).should eq([] of Int32)
   end
 end
