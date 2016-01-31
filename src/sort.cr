@@ -8,7 +8,7 @@ module Sort
     end
 
     i = 1
-    if a.size > i + 1 a[i] > a[i + 1]
+    if a.size > i + 1 && a[i] > a[i + 1]
       a[i], a[i + 1] = {a[i + 1], a[i]}
     end
 
