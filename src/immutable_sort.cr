@@ -5,17 +5,21 @@ module ImmutableSort
     left = [] of Int32
     right = [] of Int32
 
-    if a[0] > a[1]
-      left << a[1]
-    else
-      right << a[1]
+    i = 1
+    if a.size > i
+      if a[0] > a[i]
+        left << a[i]
+      else
+        right << a[i]
+      end
     end
 
-    if a.size > 2
-      if a[0] > a[2]
-        left << a[2]
+    i = 2
+    if a.size > i
+      if a[0] > a[i]
+        left << a[i]
       else
-        right << a[2]
+        right << a[i]
       end
     end
 
