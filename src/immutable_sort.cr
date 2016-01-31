@@ -5,15 +5,12 @@ module ImmutableSort
     left = [] of Int32
     right = [] of Int32
 
-    i = 1
-    while a.size > i
-      if a[0] > a[i]
-        left << a[i]
+    a[1..-1].each do |x|
+      if a[0] > x
+        left << x
       else
-        right << a[i]
+        right << x
       end
-
-      i += 1
     end
 
     sort(left) + [a[0]] + sort(right)
